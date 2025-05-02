@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout html 5- iframe</title>
+<style>
+    body{ 
+        margin: 0;
+        font-family: arial, sans-serif;
+        display: flex;
+        height: 100vh;
+    }
+    nav {
+        width: 25%;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    iframe {
+        width: 75%;
+        border: none;
+        height: 100vh;
+    }
+    a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: #333;
+    }
+    a :hover {
+        color: pink;
+    }
+</style>
+</head>
+</body>
+
+    <nav>
+        <h3>menu</h3>
+        <a href="content.html"
+        target="contenFrame">beranda</a>
+        <a href="content.html"
+        target="contactFrame">profil</a>
+        <a href="contact.html"
+        target="contentFrame">kontak</a>
+    </nav>
+    <iframe name ="contentFrame"
+src="konten.html"></iframe>
+</body>
+</html>
