@@ -8,12 +8,13 @@
     body{ 
         margin: 0;
         font-family: arial, sans-serif;
+        background-color: whitesmoke;
         display: flex;
         height: 100vh;
     }
     nav {
         width: 25%;
-        background-color: #f0f0f0;
+        background-color: pink;
         padding: 20px;
     }
     iframe {
@@ -27,23 +28,21 @@
         text-decoration: none;
         color: #333;
     }
-    a :hover {
-        color: pink;
-    }
+    a:hover {
+            color: maroon;
+            transform: translateX(5px);
+            transition: transform 0.2s ease;
+        }   
 </style>
 </head>
 </body>
 
     <nav>
-        <h3>menu</h3>
-        <a href="content.html"
-        target="contenFrame">beranda</a>
-        <a href="content.html"
-        target="contactFrame">profil</a>
-        <a href="contact.html"
-        target="contentFrame">kontak</a>
+        <h3>MENU</h3>
+        <a href="beranda.html" target="berandaFrame">beranda</a>
+        <a href="profil.html" target="berandaFrame">profil</a>
+        <a href="kontak.html" target="berandaFrame">kontak</a>
     </nav>
-    <iframe name ="contentFrame"
-src="konten.html"></iframe>
+    <iframe name ="berandaFrame" src="beranda.html"></iframe>
 </body>
 </html>
